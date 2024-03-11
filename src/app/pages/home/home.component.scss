@@ -1,0 +1,113 @@
+@import '../../../styles.scss';
+
+.home-container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    margin-top: 50px;
+
+    .home-top{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 50vh;
+        &-left{
+            width: 28%;
+            
+            &-title{
+                width: 100%;
+                height: 25%;
+
+            }
+            
+            &-name{
+                width: 100%;
+                height: 75%;
+
+            }
+
+        }
+
+        &-mid{
+            width: 42.1%;
+            height: 25%;
+        }
+        &-right{
+            width: 28%;
+            height: 100%;
+        }
+    }
+    .home-bottom{
+        display: flex;
+        flex-direction: row;
+        height: calc(50vh - 115px);
+        margin: 15px 0 50px 0;
+        &-left{
+            width: 72%;
+            display: flex;
+            flex-direction: row;
+            &-85{
+                display: flex;
+                flex-direction: row;
+                width: 85%;
+                height: 100%;
+                background-color: $darkblack;
+                border-radius: $border-radius;
+                padding: 15px;
+
+                &-col{
+                    width: 33.33%; 
+                    height: 100%;
+                }
+                .col1{
+                    width: calc(33.33% - 30px);
+                }
+                .col2{
+                    margin-left: 15px;
+                    &-top{
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+                
+                .col3{
+                    margin-left: 15px;
+                    &-top{
+                        height: 30%;
+                        width: 100%;
+                    }
+                    &-bottom{
+                        height: 70%;
+                        width: 100%;
+                    }
+                }
+
+            }
+            &-15{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: calc(15% - 30px);
+                height: 100%;
+                background-color: transparent;
+                border-radius: $border-radius;
+                margin-left: 15px;
+                
+                &-top{
+                    height: calc(50% - 7.5px);
+                    
+                }
+                &-bottom{
+                    height: calc(50% - 7.5px);
+                   
+                }
+            }
+        }
+        &-right{
+            width: 28%;
+            height: 100%;
+        }
+    }
+}

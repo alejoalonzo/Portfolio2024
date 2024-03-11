@@ -1,0 +1,16 @@
+
+@import '../../../styles.scss';
+.linkedin-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $lightblack;
+    border-radius: $border-radius;
+    border: 2px solid $darkblack;
+    fa-icon{
+        color: $whiteDark;
+        font-size: 5em;
+    }
+}

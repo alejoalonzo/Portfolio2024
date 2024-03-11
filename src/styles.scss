@@ -1,1 +1,30 @@
-/* You can add global styles to this file, and also import other style files */
+
+//colors-----------------------------
+
+$darkblack: #181918;
+$lightblack: #252525;
+$main: #e6c052;
+//vision purposes
+// $main: #8b7739;
+$white: #ffffff;
+$whiteDark : #f7f7f7;
+$bgDark: #2d2f35;
+
+
+// fonts
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+$font-lobster: "Lobster", sans-serif;
+
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: $darkblack;
+}
+
+$border-radius: 15px;
+$border-radiusIn: 10px;

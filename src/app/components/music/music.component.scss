@@ -1,0 +1,30 @@
+@import '../../../styles.scss';
+.music-container{
+    display: flex;
+    flex-direction: row;
+    background-color: $main;
+    border-radius: $border-radius;
+    width: 100%;
+    height: calc(100% - 15px);
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+
+    .music-icon{
+        fa-icon{
+            font-size: 3em;
+        }
+    }
+    .music-text{
+        font-size: 1.4em;
+        line-height: 0.9em;
+        width: 51%;
+        margin-left: 5px;
+        font-weight: bold;
+        color: $whiteDark;
+
+        span{
+            color: $darkblack;
+        }
+    }
+}

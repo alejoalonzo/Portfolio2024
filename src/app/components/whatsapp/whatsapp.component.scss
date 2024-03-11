@@ -1,0 +1,14 @@
+@import '../../../styles.scss';
+.whatsapp-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $main;
+    border-radius: $border-radius;
+    fa-icon{
+        color: $darkblack;
+        font-size: 5em;
+    }
+}

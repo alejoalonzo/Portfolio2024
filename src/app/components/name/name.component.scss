@@ -1,0 +1,31 @@
+@import "../../../styles.scss";
+.name-container{
+    background-color: $main;
+    width: 100%;
+    height: calc(100% - 15px);
+    border-radius: $border-radius;
+    margin-top: 15px;
+    .name-text{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        &-web{
+            font-size: 5em;
+            font-weight: 800;
+            line-height: 0.3;
+            margin-top: 28px;
+            color: $lightblack;
+
+        }
+        &-dev{
+            font-family: $font-lobster;
+            font-size: 3em;
+            color: $darkblack;
+        }
+
+
+    }
+
+}

@@ -1,0 +1,43 @@
+@import '../../../styles.scss';
+.recommendation-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: $lightblack;
+    border-radius: $border-radius;
+    padding: 40px;
+
+    .quote{
+        display: flex;
+        flex-direction: row;
+        color: $whiteDark;
+        font-size: 1.7em;
+        span{
+            margin-top: 120px;
+            color: $main;
+            font-size: 2em;
+        }
+    }
+    .signature{
+        color: $whiteDark;
+        font-size: 1em;
+        width: 100%;
+        text-align: start;
+        font-weight: lighter;
+    }
+
+    .button{
+        height: auto;
+        width: 100%;
+        background-color: $main;
+        color: $darkblack;
+        text-align: center;
+        padding: 10px;
+        border-radius: $border-radiusIn;
+        font-weight: bold;
+    }
+
+}
