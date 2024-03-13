@@ -1,0 +1,73 @@
+@import '../../../styles.scss';
+.container-gallery{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+    .gallery-images{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        padding: 5px;
+        position: relative;
+
+        &-text{
+            color: $whiteDark;
+            position: absolute;
+            left: 10px;
+            font-size: 2em;
+            line-height: 0.9em;
+            opacity: 1; 
+            transition: opacity 0.5s, visibility 0.5s; 
+
+
+            &-2{
+                font-family: $font-lobster;
+                font-size: 1.6em;
+            }
+
+            fa-icon{
+                color: #00adb5;
+            }
+        }
+
+        .img-box{
+            height: calc(100% - 10px);
+            width: calc(17% - 10px);
+            margin-right: 5px ;
+            border-radius: 30px;
+            background: url(../../../assets/media/gallery1.jpg);
+            background-size: cover;
+            background-position: center;
+            transition: width 0.5s;
+            z-index: 2;
+        }
+
+        .img-box:nth-child(2){
+            background: url(../../../assets/media/gallery2.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        .img-box:nth-child(3){
+            background: url(../../../assets/media/gallery3.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        .img-box:nth-child(4){
+            background: url(../../../assets/media/gallery4.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .img-box:hover{
+            width: 50%;
+            cursor: pointer;
+        }
+    }
+}

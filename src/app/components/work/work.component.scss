@@ -14,13 +14,13 @@
         padding: 15px;
 
         &-text-top{
-            height: calc(50% - 7.5px);
+            height: calc(65% - 7.5px);
             border-radius: $border-radius;
             background-color: $bgDark;
             margin-bottom: 7.5px;
         }
         &-text-bottom{
-            height: calc(50% - 7.5px);
+            height: calc(35% - 7.5px);
             margin-top: 7.5px;
             border-radius: $border-radius;
             background-color: $main;
