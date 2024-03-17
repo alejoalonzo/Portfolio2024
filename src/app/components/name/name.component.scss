@@ -1,10 +1,16 @@
 @import "../../../styles.scss";
+@import '../../app.component.scss';
+
 .name-container{
-    background-color: $main;
+    // background-color: $main;
+    background: $main-gradient;
     width: 100%;
     height: calc(100% - 15px);
     border-radius: $border-radius;
     margin-top: 15px;
+
+
+
     .name-text{
         height: 100%;
         display: flex;
@@ -12,20 +18,47 @@
         align-items: center;
         flex-direction: column;
         &-web{
+            
+           font-family: $font-inter;
             font-size: 5em;
-            font-weight: 800;
+            font-weight: 900;
             line-height: 0.3;
             margin-top: 28px;
             color: $lightblack;
+            letter-spacing: -0.05em;
 
         }
         &-dev{
+            
             font-family: $font-lobster;
             font-size: 3em;
-            color: $darkblack;
+            color: $white;
         }
 
 
     }
 
+}
+
+.name-container:hover  {
+    background: $darkblack;
+    transition: ease all 400ms;
+    cursor: pointer;
+}
+
+//-----------------------------------------LAPTOP
+
+@media (max-width: 1537px){
+    .name-container{
+        height: calc(100% - 5px);
+        margin-top: 5px;
+        .name-text{
+            &-web{
+                font-size: 4em;
+            }
+            &-dev{
+                font-size: 2.5em;
+            }
+        }
+    }
 }

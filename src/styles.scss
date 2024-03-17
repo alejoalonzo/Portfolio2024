@@ -1,9 +1,11 @@
+@import './app/app.component.scss';
 
 //colors-----------------------------
 
 $darkblack: #181918;
 $lightblack: #252525;
 $main: #e6c052;
+$main-gradient : radial-gradient(circle, rgba(230,192,82,1) 0%, rgba(237,203,103,1) 100%);
 //vision purposes
 // $main: #8b7739;
 $white: #ffffff;
@@ -15,6 +17,10 @@ $bgDark: #2d2f35;
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 $font-lobster: "Lobster", sans-serif;
 
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+$font-inter: "inter", sans-serif;
+
 *{
     margin : 0;
     padding : 0;
@@ -24,6 +30,10 @@ $font-lobster: "Lobster", sans-serif;
 body{
     font-family: 'Roboto', sans-serif;
     background-color: $darkblack;
+    cursor: none;
+}
+a{
+    text-decoration: none;
 }
 
 $border-radius: 15px;

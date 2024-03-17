@@ -8,9 +8,41 @@
     align-items: center;
     background-color: $lightblack;
     border-radius: $border-radius;
-    border: 2px solid $darkblack;
+    border: 1px solid $darkblack;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     fa-icon{
         color: $whiteDark;
         font-size: 5em;
+    }
+}
+
+.linkedin-container:hover{
+    cursor: pointer;
+    border: 1px solid $main;
+    transition: ease all 300ms;
+}
+
+//-----------------------------------------LAPTOP
+
+@media (max-width: 1537px){
+    .linkedin-container{
+        box-shadow: none;
+        fa-icon{
+            color: $whiteDark;
+            font-size: 4em;
+        }
+    }
+}
+
+// mobile------------------------------------------------------------
+@media screen and (max-width: 992px){
+    .linkedin-container{
+        border: 1px solid $main;
+        fa-icon{
+            color: $whiteDark;
+            font-size: 6em;
+            margin: 10px;
+            
+        }
     }
 }

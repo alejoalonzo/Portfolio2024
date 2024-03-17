@@ -8,7 +8,9 @@
     width: 100%;
     height: 100%;
     border-radius: $border-radius;
-    border: 2px solid $darkblack;
+    border: 1px solid $darkblack;
+    padding: 5px;
+
 
     .skills-text{
         display: flex;
@@ -18,6 +20,8 @@
         height: 100%;
         background-color: $darkblack;
         border-radius: $border-radius;
+        font-family: $font-inter;
+        font-weight: 200;
         color: $whiteDark;
         font-size: 1.5em;
         line-height: 0.9em;
@@ -27,7 +31,159 @@
     .skills-icons{
         width: 75%;
         height: 100%;
+        swiper-container{
+            swiper-slide{
+                .card{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: $whiteDark;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: $border-radius;
+                    cursor: grab;
+                    cursor: -webkit-grab;
+                    
+                    .img{
+                        display: flex;
+                        align-items: center;
+                        width: 20%;
+                        height: 100%;
+                        img{
+                            height: 80%;
+                            width: auto;
+                            border-radius: 15px;
+                        }                       
+                    }
 
+                    .text{
+                        width: 70%;
+                        height: 80%;
+                        background-color: $whiteDark;
+                        display: flex;
+                        align-items: center;
+                        p{
+                            font-size: 0.9em;
+                            font-family: $font-inter;
+                            color: $bgDark;
+                            padding: 5px 15px 5px 0;
+                        }
+                    }
+
+
+                }
+                .card:active{
+                    cursor: grabbing;
+                    cursor: -webkit-grabbing;
+                }
+            }
+        }
     }
 
+}
+
+//-----------------------------------------LAPTOP
+
+@media (max-width: 1537px){
+    .skills-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .skills-text{
+            font-size: 1.2em;
+        }
+        .skills-icons{
+            swiper-container{
+                swiper-slide{
+                    .card{
+                        .text{
+                            p{
+                                font-size: 0.8em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// mobile------------------------------------------------------------
+@media screen and (max-width: 992px){
+    .skills-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding: 5px;
+        margin-top: 10px;
+    
+    
+        .skills-text{
+            width: 100%;
+            height: 20%;
+            text-align: center;
+        }
+        .skills-icons{
+            width: 100%;
+            height: calc(80% - 20px);
+            margin-top: 10px;
+
+            swiper-container{
+                swiper-slide{
+                    .card{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        width: 100%;
+                        height: 100%;
+                        background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+                        
+                        .img{
+                            display: flex;
+                            align-items: center;
+                            width: auto;
+                            height: 50%;
+                            img{
+                                height: 80%;
+                                width: auto;
+                                border-radius: 15px;
+                                padding: 5px;
+                                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                            }                       
+                        }
+    
+                        .text{
+                            width: 80%;
+                            height: 50%;
+                            display: flex;
+                            align-items: center;
+                            background-color: transparent;
+                            p{
+                                font-size: 0.9em;
+                                font-family: $font-inter;
+                                color: gray;
+                                padding: 15px ;
+                                text-align: center;
+                                background-color: $whiteDark;
+                                border-radius: $border-radius;
+                                border: 1px solid rgb(215, 215, 215);
+                            }
+                        }
+    
+    
+                    }
+                    .card:active{
+                        cursor: grabbing;
+                        cursor: -webkit-grabbing;
+                    }
+                }
+            }
+        }
+    
+    }
 }

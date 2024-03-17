@@ -10,6 +10,7 @@ import { RecommendationComponent } from '../../components/recommendation/recomme
 import { LinkedinComponent } from '../../components/linkedin/linkedin.component';
 import { WhatsappComponent } from '../../components/whatsapp/whatsapp.component';
 import { SetSkillsComponent } from '../../components/set-skills/set-skills.component';
+import { EmailComponent } from '../../components/email/email.component';
 
 @Component({
   selector: 'app-home',
@@ -25,7 +26,8 @@ import { SetSkillsComponent } from '../../components/set-skills/set-skills.compo
     RecommendationComponent,
     LinkedinComponent,
     WhatsappComponent,
-    SetSkillsComponent
+    SetSkillsComponent,
+    EmailComponent
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'

@@ -19,7 +19,64 @@
     }
 
     .gitHub-text{
+        font-family: $font-inter;
         color: $whiteDark;
         font-size: 1em;
+    }
+}
+
+.gitHub-container a:hover {
+    cursor: pointer;
+}
+.gitHub-container a:hover {
+    .gitHub-icon{
+        fa-icon{
+            color: $whiteDark;
+            transition: ease all 300ms;
+        }
+    }
+}
+
+//-----------------------------------------LAPTOP
+
+@media (max-width: 1537px){
+    .gitHub-container{
+        .gitHub-icon{
+            margin-bottom: 5px;
+            text-align: center;
+            fa-icon{
+                text-align: center;
+                font-size: 5em;
+                color: $main;
+            }
+        }
+    
+        .gitHub-text{
+            font-family: $font-inter;
+            color: $whiteDark;
+            font-size: 0.9em;
+        }
+    }
+}
+
+// mobile------------------------------------------------------------
+@media screen and (max-width: 992px){
+    .gitHub-container{
+        .gitHub-icon{
+            margin-bottom: 5px;
+            text-align: center;
+            fa-icon{
+                text-align: center;
+                font-size: 5em;
+                color: $main;
+            }
+        }
+    
+        .gitHub-text{
+            font-family: $font-inter;
+            color: $whiteDark;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
     }
 }

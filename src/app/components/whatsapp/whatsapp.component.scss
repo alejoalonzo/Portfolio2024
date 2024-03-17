@@ -6,9 +6,47 @@
     justify-content: center;
     align-items: center;
     background-color: $main;
+    background: $main-gradient;
     border-radius: $border-radius;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     fa-icon{
         color: $darkblack;
         font-size: 5em;
+    }
+}
+
+.whatsapp-container:hover{
+    background: $darkblack;
+    transition:  ease all 300ms;
+
+    fa-icon{
+        color: $whiteDark;
+        font-size: 5em;
+        transition:  ease all 300ms;
+    }
+}
+
+//-----------------------------------------LAPTOP
+
+@media (max-width: 1537px){
+    .whatsapp-container{
+        box-shadow: none;
+        fa-icon{
+            color: $darkblack;
+            font-size: 4em;
+        }
+    }
+}
+
+// mobile------------------------------------------------------------
+@media screen and (max-width: 992px){
+    .whatsapp-container{
+
+        fa-icon{
+            color: $darkblack;
+            font-size: 6em;
+            margin: 10px;
+            
+        }
     }
 }

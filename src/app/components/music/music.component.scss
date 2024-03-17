@@ -13,18 +13,56 @@
     .music-icon{
         fa-icon{
             font-size: 3em;
+            color: $lightblack;
         }
     }
     .music-text{
         font-size: 1.4em;
         line-height: 0.9em;
-        width: 51%;
+        width: 65%;
         margin-left: 5px;
         font-weight: bold;
+        font-size: $font-inter;
         color: $whiteDark;
 
         span{
             color: $darkblack;
+        }
+    }
+}
+
+//-----------------------------------------LAPTOP
+
+@media (max-width: 1537px){
+    .music-container{
+        height: calc(100% - 5px);
+        margin-bottom: 5px;
+    
+        .music-icon{
+            fa-icon{
+                font-size: 2em;
+            }
+        }
+        .music-text{
+            font-size: 1.2em;
+        }
+    }
+    
+}
+
+
+// mobile------------------------------------------------------------
+@media screen and (max-width: 992px){
+    .music-container{
+    
+        .music-icon{
+            fa-icon{
+                font-size: 2em;
+            }
+        }
+        .music-text{
+            font-size: 1em;
+            text-align: end;
         }
     }
 }
