@@ -18,7 +18,7 @@ export class TextThreeComponent implements OnInit {
 
   ngOnInit(): void {
     if (isPlatformBrowser(this.platformId)) {
-      if (window.innerWidth >= 168){
+      if (window.innerWidth >= 992){
         if (
           document.readyState === 'complete' ||
           (document.readyState !== 'loading' && !document.documentElement.scroll)

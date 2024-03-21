@@ -1,0 +1,57 @@
+@import '../../../styles.scss';
+.timeZone-container{
+    display: flex;
+    flex-direction: column;
+    background-color: $main;
+    border-radius: $border-radius;
+    width: 100%;
+    height: calc(100% - 15px);
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    font-family: $font-inter;
+    
+    .timeZoneWrap{
+        display: flex;
+        flex-direction: row;
+        
+        .location{
+            margin-right: 10px;
+        }
+    }
+    .openToWork{
+        color: $whiteDark;
+        font-weight: bold;
+        margin-top: 3px;
+    }
+}
+
+//-----------------------------------------LAPTOP
+
+@media (max-width: 1537px){
+    .timeZone-container{
+        .timeZoneWrap{
+            font-size: 0.9em;
+            
+            .location{
+                margin-right: 5px;
+                font-size: 0.9em;
+            }
+            .currentTime{
+                font-size: 0.9em;
+            }
+        }
+        .openToWork{
+            font-size: 0.9em;
+        }
+    }
+    
+}
+
+// mobile------------------------------------------------------------
+@media screen and (max-width: 992px){
+    .timeZone-container{
+        padding: 15px;
+        
+    }
+}

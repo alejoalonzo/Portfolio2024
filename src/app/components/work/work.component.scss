@@ -37,7 +37,9 @@
                 font-family: $font-lobster;
                 padding: 0 10px;
             }
-
+        }
+        &-text-bottom:hover{
+            text-decoration: underline;
         }
     }
 }

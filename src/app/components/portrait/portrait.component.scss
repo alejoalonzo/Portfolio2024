@@ -26,9 +26,11 @@
 // mobile------------------------------------------------------------
 @media screen and (max-width: 992px){
     .portrait-container{
+        margin-bottom: 15px;
         .portrait-image{
             img{
-                height: 90%;
+                height: auto;
+                width: 90%;
             }
         }
     }

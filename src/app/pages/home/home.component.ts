@@ -11,6 +11,7 @@ import { LinkedinComponent } from '../../components/linkedin/linkedin.component'
 import { WhatsappComponent } from '../../components/whatsapp/whatsapp.component';
 import { SetSkillsComponent } from '../../components/set-skills/set-skills.component';
 import { EmailComponent } from '../../components/email/email.component';
+import { ZoneTimeComponent } from '../../components/zone-time/zone-time.component';
 
 @Component({
   selector: 'app-home',
@@ -27,7 +28,8 @@ import { EmailComponent } from '../../components/email/email.component';
     LinkedinComponent,
     WhatsappComponent,
     SetSkillsComponent,
-    EmailComponent
+    EmailComponent,
+    ZoneTimeComponent
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
