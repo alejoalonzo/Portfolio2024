@@ -13,24 +13,45 @@
         background-color: $lightblack;
         border: 1px solid $darkblack;
         border-radius: $border-radius;
+        overflow: hidden;
         
         img{
             margin: auto;
-            width:fit-content;
-            height: 100%;
+            width: 336px;
+            height: 340px;
             border-radius: $border-radius;
         }
 
     }
 }
+
+//-----------------------------------------LAPTOP-LARGE
+
+@media (max-width: 1750px){
+
+    .portrait-container{
+        margin-bottom: 15px;
+        .portrait-image{
+            img{
+                margin: auto;
+                width: 269px; 
+                height: 272px; 
+                border-radius: $border-radius;
+            }
+        }
+    }
+}
+
 // mobile------------------------------------------------------------
 @media screen and (max-width: 992px){
     .portrait-container{
         margin-bottom: 15px;
         .portrait-image{
             img{
-                height: auto;
-                width: 90%;
+                margin: auto;
+                width: 235px; /* 336px * 0.7 */
+                height: 238px; 
+                border-radius: $border-radius;
             }
         }
     }

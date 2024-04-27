@@ -100,4 +100,16 @@
         }
     }
 }
+// mobile------------------------------------------------------------
+@media screen and (max-width: 992px){
 
+    .container-gallery{
+        .gallery-images{
+            &-text{
+                fa-icon{
+                    color: #85FFBD;
+                }
+            }
+        }
+    }
+}
